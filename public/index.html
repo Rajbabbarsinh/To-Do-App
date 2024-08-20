@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f2ef;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            height: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #0077b5;
+        }
+
+        h3 {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #fff;
+            width: 45%;
+        }
+
+        .login-btn {
+            background-color: #0077b5;
+        }
+
+        .registration-btn {
+            background-color: #0077b5;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to To-Do App</h1>
+        <h3>Please Login</h3>
+        <div class="button-container">
+            <button class="button login-btn" onclick="window.location.href='/login'">Login</button>
+            <button class="button registration-btn" onclick="window.location.href='/register'">Register</button>  
+        </div>
+        <h3>Don't have an account ? Register now !!!</h3>
+    </div>
+</body>
+</html>

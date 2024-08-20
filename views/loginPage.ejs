@@ -1,0 +1,85 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Login Page</title>  
+<style>   
+body {  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  background-color: #f3f2f1;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;  
+  margin: 0;  
+}  
+
+form {   
+  border: 1px solid #d9d9d9;   
+  padding: 40px;   
+  background: #ffffff;   
+  border-radius: 5px;   
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);   
+  max-width: 350px;   
+  width: 100%;   
+  box-sizing: border-box;   
+}   
+
+input[type=text], input[type=password] {   
+  width: 100%;   
+  padding: 12px;   
+  margin: 8px 0 20px 0;  
+  display: inline-block;   
+  border: 1px solid #d9d9d9;   
+  border-radius: 3px;   
+  box-sizing: border-box;   
+  color: #333;  
+  background-color: #f9f9f9;  
+}  
+
+input::placeholder {
+  color: #999;
+}
+
+button {   
+  background-color: #0077b5;   
+  color: #ffffff;   
+  padding: 14px;   
+  margin: 8px 0;   
+  border: none;   
+  cursor: pointer;   
+  width: 100%;   
+  border-radius: 3px;   
+  font-size: 16px;   
+  transition: background 0.3s ease;   
+}   
+
+button:hover {   
+  background-color: #005582;   
+}   
+
+h1 {  
+  text-align: center;  
+  color: #0077b5;  
+  margin-bottom: 30px;  
+}  
+
+label {
+  color: #333;
+}
+
+</style>   
+</head>    
+<body>    
+  <form action="/login" method="POST">  
+    <h1>Login</h1>   
+    <div class="container">   
+      <label for="loginId">Email or Username:</label>   
+      <input type="text" placeholder="Enter Email or Username" name="loginId" required>  
+      <label for="password">Password:</label>   
+      <input type="password" placeholder="Enter Password" name="password" required>  
+      <button type="submit">Login</button>   
+    </div>   
+  </form>     
+</body>    
+</html>
